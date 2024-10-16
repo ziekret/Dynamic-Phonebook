@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Phonebook</h2>
+        <form id="contactForm">
+
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="text" id="address" placeholder="Address" required>
+            <input type="tel" id="cellNumber" placeholder="Cell Number" required pattern="[+]?[0-9]*" title="Cell Number should only contain numbers">
+            <input type="tel" id="phoneNumber" placeholder="Phone Number" required pattern="[+]?[0-9]*" title="Phone Number should only contain numbers">
+            <input type="email" id="email" placeholder="Email Address" required>
+            
+            <button type="submit">Add Contact</button>
+
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Cell Number</th>
+                    <th>Phone Number</th>
+                    <th>Email Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="contactList">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
